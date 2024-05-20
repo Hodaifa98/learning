@@ -1,2 +1,2 @@
 # learning
-A box where I register new things I learn.
+A box where I document new things I learn.
