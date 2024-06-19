@@ -4,7 +4,7 @@ Pandas Series is a one-dimensional labeled array capable of holding data of any 
 The axis labels are called index.
 Labels don't need to be unique but must be a hashable type. The object supports both integer and label-based indexing.
 
-### Creating a series
+### Creating a series:
 
 ```
 import pandas as pd
@@ -14,7 +14,7 @@ data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 ser = pd.Series(data)
 ```
 
-### Access an element
+### Access an element:
 Position access:
 ```
 first_element = ser[0]
@@ -39,7 +39,7 @@ Using **.loc** and **.iloc**:
 
 ``` ser.iloc[3:6]```
 
-### Operations on series
+### Operations on series:
 There are many binary operations (add, sub, mul, div, sum, abs...).
 
 ```
@@ -53,7 +53,7 @@ ser1.add(ser2, fill_value=0)
 ser1.sub(ser2, fill_value=0)
 ```
 
-### Conversion operations
+### Conversion operations:
 We can convert the datatype of a series (int, string, list...).
 
 ```
