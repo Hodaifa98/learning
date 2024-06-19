@@ -24,6 +24,13 @@ df2 = pd.DataFrame(lst)
 # Array.
 dt = {'Name':['A', 'B'], 'Age':[20, 21]}
 df3 = pd.DataFrame(dt)
-
 ```
 
+##### Describe a dataframe:
+It displays several statistical measures, including mean, median, standard deviation...
+```
+import pandas as pd
+data = pd.read_csv('data.csv')
+
+print(data.descibe())
+```
