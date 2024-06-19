@@ -59,7 +59,7 @@ df['Age'] = df['Age'] + 1
 ```
 
 #### Sort:
-```
-df_sorted = df.sort_values(by='Age', ascending=False)
-```
+```df_sorted = df.sort_values(by='Age', ascending=False)```
 
+# Group & aggregate:
+```name_wise_average_age = df.groupby('Name')['Age'].mean()```
