@@ -27,6 +27,21 @@ df['Address'] = new_address
 df.drop(["Age", "Address"], axis=1, inplace=True)
 ```
 
+#### Slicing columns:
+```
+# By name
+selected = df[['Name', 'Address']]
+
+# Range (from 1 (inclusive) to 2 (exclusive))
+selected = df.iloc[:, 1:3]
+
+# From starting point (from 1 inclusive)
+selected = df.iloc[:, 1:]
+
+# Until end point (Up to index 3 inclusive)
+selected = df.iloc[:, :4]
+```
+
 ### Rows:
 #### Select rows:
 ```
@@ -61,5 +76,5 @@ df['Age'] = df['Age'] + 1
 #### Sort:
 ```df_sorted = df.sort_values(by='Age', ascending=False)```
 
-# Group & aggregate:
+#### Group & aggregate:
 ```name_wise_average_age = df.groupby('Name')['Age'].mean()```
