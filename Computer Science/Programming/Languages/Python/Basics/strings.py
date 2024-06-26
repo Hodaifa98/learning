@@ -1,4 +1,4 @@
-""" Explaining python strings """
+""" Explaining python strings and formatting """
 
 # Looping through a string:
 word = "Hello"
@@ -43,4 +43,46 @@ print("This is a double quote \"")
 
 # Other escape characters: \\ (Backslash) \n (New line) \t (Tab)
 
+# String Formatting: Formatting strings in Python.
+
+# Using f-strings (formatted string literals):
+name = "Alice"
+age = 30
+print(f"My name is {name} and I am {age} years old.")
+
+# Formatting numbers:
+pi = 3.14159265359
+print(f"The value of pi is approximately {pi:.2f}")  # Two decimal places
+
+# Using format() method:
+name = "Bob"
+age = 25
+print("My name is {} and I am {} years old.".format(name, age))
+
+# Specifying positions:
+print("My name is {0} and I am {1} years old. {1} is my age.".format(name, age))
+
+# Named placeholders:
+print("My name is {name} and I am {age} years old.".format(name="Charlie", age=35))
+
+# Alignment and padding:
+print("{:<10}".format("left"))  # Left aligned
+print("{:>10}".format("right"))  # Right aligned
+print("{:^10}".format("center"))  # Center aligned
+print("{:*^10}".format("center"))  # Center aligned with padding
+
+# Formatting with dictionaries:
+person = {"name": "Eve", "age": 28}
+print("My name is {name} and I am {age} years old.".format(**person))
+
+# Formatting with format specifiers:
+number = 12345.6789
+print("Formatted number: {:.2f}".format(number))  # Two decimal places
+print("Exponential notation: {:.2e}".format(number))  # Exponential notation
+print("Hexadecimal: {:x}".format(255))  # Hexadecimal
+
+# Using old-style formatting (%):
+name = "Frank"
+age = 40
+print("My name is %s and I am %d years old." % (name, age))
 
